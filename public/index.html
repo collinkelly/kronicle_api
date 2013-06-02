@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Kronicle Test</title>
+</head>
+<body>
+	<script src="js/lib/jquery.min.js"></script>
+	<script>
+		// jQuery.post('/kronicles', {
+			// title:'Yoga Demo',
+			// description       : "Burger Demo",
+			// category          : "food",
+			// imageUrl          : "burgerdemo.img",
+			// totalTime         : 150000,
+			// timesCompleted    : 12,
+			// steps:[
+				// {
+					// title			: "bdStep 1 Title",
+					// description		: "bdStep 1 description",
+					// imageUrl		: 'burgerstep1.img',
+					// time 			: 20000,
+					// indexInKronicle : 0
+				// },
+				// {
+					// title			: "bdStep 2 Title",
+					// description		: "bdStep 2 description",
+					// imageUrl		: 'burgerstep2.img',
+					// time 			: 80000,
+					// indexInKronicle : 1
+				// },
+				// {
+					// title			: "bdStep 3 Title",
+					// description		: "bdStep 3 description",
+					// imageUrl		: 'burgerstep3.img',
+					// time 			: 60000,
+					// indexInKronicle : 2
+				// },
+				// {
+					// title			: "bdStep 4 Title",
+					// description		: "bdStep 4 description",
+					// imageUrl		: 'burgerstep4.img',
+					// time 			: 30000,
+					// indexInKronicle : 3
+				// }
+			// ]
+		// }, response );
+	
+	// jQuery.ajax({
+	// 	url:'/kronicles/51a828cc380e680000000002',
+	// 	type : 'DELETE',
+	// 	success : response
+	// });
+	
+	// jQuery.ajax({
+	// 	url:'/kronicles/51322e86deccb67989000001',
+	// 	type : 'PUT',
+	// 	data : {
+	// 	},
+	// 	success : response
+	// });
+	
+	//	Burger Demo: 51aa4be4b0388fbf5a000002
+	//		step0: 51aa4be4b0388fbf5a000006
+	//		step1: 51aa4be4b0388fbf5a000005
+	//		step2: 51aa4be4b0388fbf5a000004
+	//		step3: 51aa4be4b0388fbf5a000003
+		
+		//jQuery.get( '/kronicles', response);
+		jQuery.get( '/kronicles/51aa4be4b0388fbf5a000002/step/51aa4be4b0388fbf5a000005', response);
+		//jQuery.get( '/kronicles/step/51aa4be4b0388fbf5a000004', response);
+		function response(data, textStatus, jqXHR ) {
+			console.log( '\nGet response:' );
+			console.dir( data );
+		}
+
+	</script>
+	
+</body>
+</html>
