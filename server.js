@@ -24,7 +24,6 @@ var Kronicle = new mongoose.Schema({
 	steps			: [Step]
 })
 
-StepModel = mongoose.model('Step', Step);
 KronicleModel = mongoose.model('Kronicle', Kronicle);
 
 
