@@ -7,52 +7,62 @@
 <body>
 	<script src="js/lib/jquery.min.js"></script>
 	<script>
-		jQuery.post('http://166.78.151.97:4711/kronicles', {
-    "title": "Crazy Train Guitar Tab",
-    "description": "\"Crazy Train\" is the first single from British heavy metal vocalist Ozzy Osbourne's debut solo album, Blizzard of Ozz, released in 1980. A live version of the song from the album Tribute was also released as a single in 1987 with an accompanying music video. The song was written by Osbourne, Randy Rhoads and Bob Daisley.",
-    "category": "choose an option…",
-    "imageUrl": "crazytrain-media-1.png",
-    "_id": "51ab5238da51084c80000012",
-    "__v": 0,
-    "steps": [
-      {
-        "title": "Step 1: Intro lick",
-        "description": "\\nG  ---------------------------------------------\\nD  ---------------------------------------------\\nA  ---00-----------------55-----------------00\\nE  22------00---22------------00---22--------\\n\\nG  ---------------------------------------------\\nD  ---------------------------------------------\\nA  ---00-----------------55-----------------00\\nE  22------00---22------------00---22--------",
-        "imageUrl": "crazy_train_1.mov",
-        "dialImageUrl": "crazytrain-circle-1.png",
-        "time": 60,
-        "indexInKronicle": 0,
-        "_id": "51ab5238da51084c80000016"
-      },
-      {
-        "title": "Step 2: Verse",
-        "description": "\\nG  ---------------------------------------------\\nD  ---------------------------------------------\\nA  ---00-----------------55-----------------00\\nE  22------00---22------------00---22--------\\n\\nG  ---------------------------------------------\\nD  ---------------------------------------------\\nA  ---00-----------------55-----------------00\\nE  22------00---22------------00---22--------",
-        "imageUrl": "crazy_train_2.mov",
-        "dialImageUrl": "crazytrain-circle-2.png",
-        "time": 60,
-        "indexInKronicle": 1,
-        "_id": "51ab5238da51084c80000015"
-      },
-      {
-        "title": "Step 3: The break",
-        "description": "\\nG  ---------------------------------------------\\nD  ---------------------------------------------\\nA  ---00-----------------55-----------------00\\nE  22------00---22------------00---22--------\\n\\nG  ---------------------------------------------\\nD  ---------------------------------------------\\nA  ---00-----------------55-----------------00\\nE  22------00---22------------00---22--------",
-        "imageUrl": "crazy_train_3.mov",
-        "dialImageUrl": "crazytrain-circle-3.png",
-        "time": 60,
-        "indexInKronicle": 2,
-        "_id": "51ab5238da51084c80000014"
-      },
-      {
-        "title": "Step 4: Rock out",
-        "description": "These are the basics of Crazy Train.\nCheck out my other Kronicles for the solo, if you dare!",
-        "imageUrl": "crazytrain-media-2.png",
-        "dialImageUrl": "crazytrain-circle-4.png",
-        "time": 0,
-        "indexInKronicle": 3,
-        "_id": "51ab5238da51084c80000013"
-      }
-    ]
-  }, response );
+		// jQuery.post('/kronicles', {
+  //   "title": "BARF!!!",
+  //   "description": "This is my fool proof way to grill the perfect all american cheeseburger. All you need is some meat and a grill and you are good to go!",
+  //   "category": "food",
+  //   "imageUrl": "burger-media-6.png",
+  //   "steps": [
+  //     {
+  //       "title": "Prep your ingredients",
+  //       "description": "Divide the meat into 4 equal portions (about 6 ounces each). \n\nForm each portion loosely into a 3/4-inch-thick burger and make a deep depression in the center with your thumb. \n\nSeason both sides of each burger with salt and pepper.\n\nBrush the burgers with the oil. ",
+  //       "imageUrl": "burger-media-1.png",
+  //       "dialImageUrl": "burger-circle-1.png",
+  //       "time": 300,
+  //       "indexInKronicle": 0,
+  //     },
+  //     {
+  //       "title": "Step 2: Warm the grill",
+  //       "description": "Heat the grill to high heat.",
+  //       "imageUrl": "burger-media-2.png",
+  //       "dialImageUrl": "burger-circle-2.png",
+  //       "time": 60,
+  //       "indexInKronicle": 1,
+  //     },
+  //     {
+  //       "title": "Step 3: Burger on flame",
+  //       "description": "Cook the burgers until golden brown and slightly charred on the first side. Don't press the with the spatula!",
+  //       "imageUrl": "burger-media-3.png",
+  //       "dialImageUrl": "burger-circle-3.png",
+  //       "time": 180,
+  //       "indexInKronicle": 2,
+  //     },
+  //     {
+  //       "title": "Step 4: Flip and keep cooking",
+  //       "description": "Flip over the burgers. Just once.\nCook beef burgers until golden brown and slightly charred on the second side.",
+  //       "imageUrl": "burger-media-4.png",
+  //       "dialImageUrl": "burger-circle-4.png",
+  //       "time": 180,
+  //       "indexInKronicle": 3,
+  //     },
+  //     {
+  //       "title": "Step 5: Say cheese",
+  //       "description": "Add your favorite cheese.",
+  //       "imageUrl": "burger-media-5.png",
+  //       "dialImageUrl": "burger-circle-5.png",
+  //       "time": 60,
+  //       "indexInKronicle": 4,
+  //     },
+  //     {
+  //       "title": "Step 6: Enjoy!",
+  //       "description": "Remove from grill and put the burgers on buns. Garnish with ketchup, mayo, lettuce and tomato or\ndesired toppings. ",
+  //       "imageUrl": "burger-media-6.png",
+  //       "dialImageUrl": "burger-circle-6.png",
+  //       "time": 0,
+  //       "indexInKronicle": 5,
+  //     }
+  //   ]
+  // }, response );
 	
 	// jQuery.ajax({
 	// 	url:'/kronicles/51b1ce437f5a6b0000000002',
@@ -75,8 +85,8 @@
 	//		step3: 51aa4be4b0388fbf5a000003
 		
 
-		jQuery.get( 'http://166.78.151.97:4711/kronicles', response);
-		//jQuery.get( '/kronicles', response);
+		//jQuery.get( 'http://166.78.151.97:4711/kronicles', response);
+		jQuery.get( '/kronicles', response);
 		//jQuery.get( '/kronicles/steps', response);
 		//jQuery.get( '/kronicles/51b1ca94eb3fc80000000002/steps/51ab3445da51084c80000008', response);
 		
