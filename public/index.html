@@ -65,11 +65,11 @@
   //   ]
   // }, response );
 	
-	// jQuery.ajax({
-	// 	url:'/kronicles/51b4ed08440bb6d938000001',
-	// 	type : 'DELETE',
-	// 	success : response
-	// });
+	jQuery.ajax({
+		url:'http://166.78.151.97:4711/kronicles',
+		type : 'DELETE',
+		success : response
+	});
 	
 	// jQuery.ajax({
 	// 	url:'/kronicles/521213b5b9676d8860000002/items',
@@ -92,7 +92,8 @@
 
 
 
-		jQuery.get( 'http://166.78.151.97:4711/kronicles', response);
+    //jQuery.get( 'http://166.78.151.97:4711/kronicles', response);
+    //jQuery.get( '/kronicles/521213b5b9676d8860000002', response);
     // jQuery.get( '/kronicles/521213b5b9676d8860000002', response);
     // jQuery.get( '/kronicles/521213b5b9676d8860000002/items', response);
 		// jQuery.get( '/kronicles/steps', response);
