@@ -21,9 +21,12 @@ var Kronicle = new mongoose.Schema({
 	imageUrl		: String,
 	totalTime		: Number,
 	timesCompleted	: Number,
+	active			: Boolean,
+	items			: Array,
 	steps			: [Step]
 })
 
+StepModel = mongoose.model('Step', Step);
 KronicleModel = mongoose.model('Kronicle', Kronicle);
 
 
